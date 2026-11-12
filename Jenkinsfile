@@ -7,6 +7,11 @@ pipeline {
                 sh 'mvn -B clean package'
             }
         }
+        stage('Deploy to Tomcat') {
+            steps {
+                sh 'cp target/shopeasy.war $HOME/devops/tomcat/webapps/'
+            }
+        }
     }
 
     post {
