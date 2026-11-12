@@ -1,7 +1,7 @@
 <%@ page import="com.shopeasy.PriceService" %>
 <html>
 <body>
-  <h1>ShopEasy - Version 1.1</h1>
+  <h1>ShopEasy - Version 1.2</h1>
   <p>Shoes: Rs 1000</p>
   <p>With 10% off: Rs <%= new PriceService().applyDiscount(1000, 10) %></p>
 </body>
